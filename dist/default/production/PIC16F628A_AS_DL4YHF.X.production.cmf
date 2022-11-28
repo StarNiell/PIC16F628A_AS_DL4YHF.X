@@ -1,0 +1,967 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/counter.o
+edata EEDATA 3 0 2100 1D 2 1
+resetVec CODE 0 0 0 1A3 2 1
+code CODE 0 634 634 1CC 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 120-14F 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 120-14F 1
+CONST 1A3-633 2
+ENTRY 1A3-633 2
+IDLOC 2000-2003 2
+CODE 1A3-633 2
+COMMON 70-7F 1
+EEDATA 211D-217F 2
+STRCODE 1A3-633 2
+STRING 1A3-633 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/counter.o
+0 resetVec CODE >632:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1 resetVec CODE >728:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2 resetVec CODE >731:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3 resetVec CODE >732:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4 resetVec CODE >733:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5 resetVec CODE >734:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6 resetVec CODE >735:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7 resetVec CODE >736:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8 resetVec CODE >737:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9 resetVec CODE >738:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A resetVec CODE >739:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B resetVec CODE >740:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C resetVec CODE >741:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D resetVec CODE >742:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E resetVec CODE >743:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F resetVec CODE >744:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10 resetVec CODE >745:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11 resetVec CODE >746:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12 resetVec CODE >747:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13 resetVec CODE >748:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+14 resetVec CODE >749:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15 resetVec CODE >751:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+16 resetVec CODE >752:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17 resetVec CODE >755:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18 resetVec CODE >756:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19 resetVec CODE >757:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1A resetVec CODE >758:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1B resetVec CODE >759:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1C resetVec CODE >760:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1D resetVec CODE >761:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1E resetVec CODE >762:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1F resetVec CODE >763:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+20 resetVec CODE >764:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+21 resetVec CODE >765:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+22 resetVec CODE >766:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+23 resetVec CODE >767:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+24 resetVec CODE >768:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+25 resetVec CODE >769:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+26 resetVec CODE >783:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+27 resetVec CODE >798:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+28 resetVec CODE >799:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+29 resetVec CODE >800:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2A resetVec CODE >801:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2B resetVec CODE >803:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2C resetVec CODE >832:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2D resetVec CODE >833:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2E resetVec CODE >833:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+2F resetVec CODE >833:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+30 resetVec CODE >833:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+31 resetVec CODE >834:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+32 resetVec CODE >834:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+33 resetVec CODE >834:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+34 resetVec CODE >834:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+35 resetVec CODE >835:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+36 resetVec CODE >835:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+37 resetVec CODE >835:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+38 resetVec CODE >835:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+39 resetVec CODE >836:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3A resetVec CODE >836:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3B resetVec CODE >836:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3C resetVec CODE >836:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3D resetVec CODE >837:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3E resetVec CODE >837:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+3F resetVec CODE >837:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+40 resetVec CODE >837:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+41 resetVec CODE >838:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+42 resetVec CODE >838:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+43 resetVec CODE >838:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+44 resetVec CODE >838:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+45 resetVec CODE >839:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+46 resetVec CODE >839:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+47 resetVec CODE >839:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+48 resetVec CODE >839:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+49 resetVec CODE >840:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4A resetVec CODE >840:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4B resetVec CODE >840:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4C resetVec CODE >840:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4D resetVec CODE >851:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4E resetVec CODE >852:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+4F resetVec CODE >853:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+50 resetVec CODE >854:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+51 resetVec CODE >855:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+52 resetVec CODE >856:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+53 resetVec CODE >857:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+54 resetVec CODE >858:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+55 resetVec CODE >859:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+56 resetVec CODE >860:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+57 resetVec CODE >861:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+58 resetVec CODE >862:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+59 resetVec CODE >863:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5A resetVec CODE >864:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5B resetVec CODE >865:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5C resetVec CODE >875:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5D resetVec CODE >876:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5E resetVec CODE >877:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+5F resetVec CODE >878:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+60 resetVec CODE >879:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+61 resetVec CODE >880:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+62 resetVec CODE >881:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63 resetVec CODE >882:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64 resetVec CODE >883:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65 resetVec CODE >884:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66 resetVec CODE >885:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67 resetVec CODE >886:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68 resetVec CODE >887:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69 resetVec CODE >888:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A resetVec CODE >937:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B resetVec CODE >938:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C resetVec CODE >940:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D resetVec CODE >941:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E resetVec CODE >942:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F resetVec CODE >948:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+70 resetVec CODE >949:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71 resetVec CODE >950:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72 resetVec CODE >952:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73 resetVec CODE >954:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74 resetVec CODE >955:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75 resetVec CODE >956:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76 resetVec CODE >957:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77 resetVec CODE >958:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78 resetVec CODE >959:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79 resetVec CODE >998:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A resetVec CODE >1002:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B resetVec CODE >1006:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C resetVec CODE >1007:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D resetVec CODE >1008:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E resetVec CODE >1009:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F resetVec CODE >1011:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+80 resetVec CODE >1012:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+81 resetVec CODE >1013:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+82 resetVec CODE >1014:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+83 resetVec CODE >1019:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+84 resetVec CODE >1020:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+85 resetVec CODE >1043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+86 resetVec CODE >1043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+87 resetVec CODE >1043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+88 resetVec CODE >1043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+89 resetVec CODE >1043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8A resetVec CODE >1043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8B resetVec CODE >1044:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8C resetVec CODE >1048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8D resetVec CODE >1048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8E resetVec CODE >1048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+8F resetVec CODE >1048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+90 resetVec CODE >1048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+91 resetVec CODE >1048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+92 resetVec CODE >1049:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+93 resetVec CODE >1053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+94 resetVec CODE >1053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+95 resetVec CODE >1053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+96 resetVec CODE >1053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+97 resetVec CODE >1053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+98 resetVec CODE >1053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+99 resetVec CODE >1054:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9A resetVec CODE >1058:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9B resetVec CODE >1058:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9C resetVec CODE >1058:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9D resetVec CODE >1058:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9E resetVec CODE >1058:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+9F resetVec CODE >1058:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A0 resetVec CODE >1059:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A1 resetVec CODE >1063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A2 resetVec CODE >1063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A3 resetVec CODE >1063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A4 resetVec CODE >1063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A5 resetVec CODE >1063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A6 resetVec CODE >1063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A7 resetVec CODE >1064:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A8 resetVec CODE >1070:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+A9 resetVec CODE >1071:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+AA resetVec CODE >1072:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+AB resetVec CODE >1073:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+AC resetVec CODE >1074:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+AD resetVec CODE >1075:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+AE resetVec CODE >1076:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+AF resetVec CODE >1097:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B0 resetVec CODE >1098:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B1 resetVec CODE >1099:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B2 resetVec CODE >1100:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B3 resetVec CODE >1101:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B4 resetVec CODE >1102:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B5 resetVec CODE >1103:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B6 resetVec CODE >1104:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B7 resetVec CODE >1105:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B8 resetVec CODE >1106:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+B9 resetVec CODE >1107:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+BA resetVec CODE >1108:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+BB resetVec CODE >1109:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+BC resetVec CODE >1110:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+BD resetVec CODE >1114:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+BE resetVec CODE >1115:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+BF resetVec CODE >1117:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C0 resetVec CODE >1118:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C1 resetVec CODE >1119:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C2 resetVec CODE >1136:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C3 resetVec CODE >1137:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C4 resetVec CODE >1138:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C5 resetVec CODE >1139:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C6 resetVec CODE >1140:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C7 resetVec CODE >1141:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C8 resetVec CODE >1142:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+C9 resetVec CODE >1143:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+CA resetVec CODE >1144:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+CB resetVec CODE >1145:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+CC resetVec CODE >1154:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+CD resetVec CODE >1155:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+CE resetVec CODE >1156:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+CF resetVec CODE >1157:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D0 resetVec CODE >1158:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D1 resetVec CODE >1159:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D2 resetVec CODE >1160:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D3 resetVec CODE >1161:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D4 resetVec CODE >1162:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D5 resetVec CODE >1163:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D6 resetVec CODE >1174:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D7 resetVec CODE >1175:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D8 resetVec CODE >1176:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+D9 resetVec CODE >1177:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+DA resetVec CODE >1179:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+DB resetVec CODE >1180:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+DC resetVec CODE >1182:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+DD resetVec CODE >1183:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+DE resetVec CODE >1206:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+DF resetVec CODE >1207:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E0 resetVec CODE >1208:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E1 resetVec CODE >1209:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E2 resetVec CODE >1210:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E3 resetVec CODE >1211:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E4 resetVec CODE >1212:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E5 resetVec CODE >1213:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E6 resetVec CODE >1214:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E7 resetVec CODE >1215:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E8 resetVec CODE >1217:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+E9 resetVec CODE >1218:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+EA resetVec CODE >1219:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+EB resetVec CODE >1220:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+EC resetVec CODE >1221:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+ED resetVec CODE >1222:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+EE resetVec CODE >1223:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+EF resetVec CODE >1224:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F0 resetVec CODE >1230:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F1 resetVec CODE >1231:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F2 resetVec CODE >1233:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F3 resetVec CODE >1234:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F4 resetVec CODE >1235:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F5 resetVec CODE >1236:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F6 resetVec CODE >1237:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F7 resetVec CODE >1239:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F8 resetVec CODE >1240:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+F9 resetVec CODE >1241:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+FA resetVec CODE >1246:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+FB resetVec CODE >1247:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+FC resetVec CODE >1249:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+FD resetVec CODE >1250:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+FE resetVec CODE >1252:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+FF resetVec CODE >1253:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+100 resetVec CODE >1254:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+101 resetVec CODE >1255:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+102 resetVec CODE >1272:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+103 resetVec CODE >1273:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+104 resetVec CODE >1275:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+105 resetVec CODE >1276:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+106 resetVec CODE >1277:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+107 resetVec CODE >1279:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+108 resetVec CODE >1280:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+109 resetVec CODE >1281:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10A resetVec CODE >1282:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10B resetVec CODE >1283:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10C resetVec CODE >1284:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10D resetVec CODE >1285:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10E resetVec CODE >1286:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+10F resetVec CODE >1287:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+110 resetVec CODE >1292:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+111 resetVec CODE >1293:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+112 resetVec CODE >1295:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+113 resetVec CODE >1296:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+114 resetVec CODE >1297:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+115 resetVec CODE >1298:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+116 resetVec CODE >1299:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+117 resetVec CODE >1301:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+118 resetVec CODE >1302:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+119 resetVec CODE >1303:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11A resetVec CODE >1306:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11B resetVec CODE >1317:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11C resetVec CODE >1318:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11D resetVec CODE >1319:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11E resetVec CODE >1320:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+11F resetVec CODE >1321:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+120 resetVec CODE >1322:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+121 resetVec CODE >1323:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+122 resetVec CODE >1324:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+123 resetVec CODE >1325:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+124 resetVec CODE >1326:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+125 resetVec CODE >1327:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+126 resetVec CODE >1328:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+127 resetVec CODE >1337:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+128 resetVec CODE >1339:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+129 resetVec CODE >1340:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12A resetVec CODE >1344:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12B resetVec CODE >1345:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12C resetVec CODE >1346:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12D resetVec CODE >1347:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12E resetVec CODE >1348:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+12F resetVec CODE >1350:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+130 resetVec CODE >1351:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+131 resetVec CODE >1352:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+132 resetVec CODE >1353:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+133 resetVec CODE >1355:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+134 resetVec CODE >1356:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+135 resetVec CODE >1357:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+136 resetVec CODE >1358:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+137 resetVec CODE >1360:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+138 resetVec CODE >1361:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+139 resetVec CODE >1362:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13A resetVec CODE >1363:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13B resetVec CODE >1366:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13C resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13D resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13E resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+13F resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+140 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+142 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+143 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+148 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+149 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+14B resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+14C resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+151 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+152 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+154 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+155 resetVec CODE >1371:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+159 resetVec CODE >1372:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15A resetVec CODE >1372:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15B resetVec CODE >1373:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15C resetVec CODE >1374:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15D resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15E resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+15F resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+160 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+161 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+164 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+165 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+169 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+16A resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+16D resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+16E resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+172 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+173 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+176 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+177 resetVec CODE >1377:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17A resetVec CODE >1378:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17B resetVec CODE >1379:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17C resetVec CODE >1380:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17D resetVec CODE >1381:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17E resetVec CODE >1381:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+17F resetVec CODE >1406:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+180 resetVec CODE >1407:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+181 resetVec CODE >1408:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+182 resetVec CODE >1409:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+183 resetVec CODE >1409:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+184 resetVec CODE >1410:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+185 resetVec CODE >1411:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+186 resetVec CODE >1412:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+187 resetVec CODE >1412:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+188 resetVec CODE >1413:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+189 resetVec CODE >1414:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18A resetVec CODE >1415:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18B resetVec CODE >1415:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18C resetVec CODE >1416:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18D resetVec CODE >1417:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18E resetVec CODE >1418:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+18F resetVec CODE >1418:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+190 resetVec CODE >1419:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+191 resetVec CODE >1424:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+192 resetVec CODE >1425:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+193 resetVec CODE >1426:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+194 resetVec CODE >1430:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+195 resetVec CODE >1434:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+196 resetVec CODE >1435:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+197 resetVec CODE >1436:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+198 resetVec CODE >1437:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+199 resetVec CODE >1438:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19A resetVec CODE >1439:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19B resetVec CODE >1440:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19C resetVec CODE >1441:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19D resetVec CODE >1442:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19E resetVec CODE >1443:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+19F resetVec CODE >1444:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1A0 resetVec CODE >1445:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1A1 resetVec CODE >1446:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+1A2 resetVec CODE >1447:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+634 code CODE >1467:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+635 code CODE >1468:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+636 code CODE >1469:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+637 code CODE >1470:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+638 code CODE >1471:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+639 code CODE >1473:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63A code CODE >1474:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63B code CODE >1475:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63C code CODE >1476:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63D code CODE >1477:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63E code CODE >1479:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+63F code CODE >1480:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+640 code CODE >1482:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+641 code CODE >1483:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+642 code CODE >1485:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+643 code CODE >1486:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+644 code CODE >1487:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+645 code CODE >1488:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+646 code CODE >1489:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+647 code CODE >1490:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+648 code CODE >1491:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+649 code CODE >1492:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64A code CODE >1493:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64B code CODE >1494:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64C code CODE >1496:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64D code CODE >1497:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64E code CODE >1501:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+64F code CODE >1502:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+650 code CODE >1503:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+651 code CODE >1504:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+652 code CODE >1505:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+653 code CODE >1511:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+654 code CODE >1512:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+655 code CODE >1513:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+656 code CODE >1514:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+657 code CODE >1515:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+658 code CODE >1516:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+659 code CODE >1517:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65A code CODE >1518:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65B code CODE >1519:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65C code CODE >1520:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65D code CODE >1526:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65E code CODE >1535:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+65F code CODE >1536:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+660 code CODE >1537:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+661 code CODE >1538:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+662 code CODE >1539:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+663 code CODE >1540:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+664 code CODE >1541:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+665 code CODE >1542:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+666 code CODE >1544:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+667 code CODE >1546:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+668 code CODE >1547:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+669 code CODE >1561:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66A code CODE >1562:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66B code CODE >1563:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66C code CODE >1564:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66D code CODE >1565:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66E code CODE >1566:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+66F code CODE >1568:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+670 code CODE >1585:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+671 code CODE >1586:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+672 code CODE >1587:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+673 code CODE >1588:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+674 code CODE >1593:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+675 code CODE >1594:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+676 code CODE >1650:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+677 code CODE >1651:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+678 code CODE >1652:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+679 code CODE >1653:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67A code CODE >1654:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67B code CODE >1655:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67C code CODE >1656:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67D code CODE >1657:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67E code CODE >1658:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+67F code CODE >1659:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+680 code CODE >1660:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+681 code CODE >1661:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+682 code CODE >1662:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+683 code CODE >1663:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+684 code CODE >1664:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+685 code CODE >1665:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+686 code CODE >1666:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+687 code CODE >1667:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+688 code CODE >1668:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+689 code CODE >1669:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68A code CODE >1683:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68B code CODE >1684:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68C code CODE >1685:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68D code CODE >1686:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68E code CODE >1688:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+68F code CODE >1689:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+690 code CODE >1690:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+691 code CODE >1691:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+692 code CODE >1693:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+693 code CODE >1694:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+694 code CODE >1698:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+695 code CODE >1699:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+696 code CODE >1701:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+697 code CODE >1702:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+698 code CODE >1703:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+699 code CODE >1704:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69A code CODE >1706:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69B code CODE >1707:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69C code CODE >1711:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69D code CODE >1712:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69E code CODE >1713:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+69F code CODE >1717:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A0 code CODE >1718:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A1 code CODE >1719:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A2 code CODE >1720:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A3 code CODE >1724:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A4 code CODE >1725:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A5 code CODE >1726:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A6 code CODE >1727:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A7 code CODE >1731:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A8 code CODE >1732:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6A9 code CODE >1733:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6AA code CODE >1734:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6AB code CODE >1738:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6AC code CODE >1739:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6AD code CODE >1740:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6AE code CODE >1741:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6AF code CODE >1762:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B0 code CODE >1763:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B1 code CODE >1769:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B2 code CODE >1770:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B3 code CODE >1774:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B4 code CODE >1775:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B5 code CODE >1783:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B6 code CODE >1784:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B7 code CODE >1786:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B8 code CODE >1787:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6B9 code CODE >1788:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6BA code CODE >1789:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6BB code CODE >1790:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6BC code CODE >1795:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6BD code CODE >1796:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6BE code CODE >1797:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6BF code CODE >1798:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C0 code CODE >1801:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C1 code CODE >1802:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C2 code CODE >1803:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C3 code CODE >1804:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C4 code CODE >1805:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C5 code CODE >1808:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C6 code CODE >1809:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C7 code CODE >1811:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C8 code CODE >1812:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6C9 code CODE >1813:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6CA code CODE >1814:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6CB code CODE >1816:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6CC code CODE >1817:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6CD code CODE >1818:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6CE code CODE >1819:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6CF code CODE >1820:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D0 code CODE >1821:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D1 code CODE >1827:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D2 code CODE >1828:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D3 code CODE >1829:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D4 code CODE >1830:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D5 code CODE >1833:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D6 code CODE >1834:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D7 code CODE >1835:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D8 code CODE >1836:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6D9 code CODE >1837:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6DA code CODE >1842:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6DB code CODE >1843:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6DC code CODE >1849:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6DD code CODE >1850:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6DE code CODE >1851:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6DF code CODE >1852:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E0 code CODE >1867:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E1 code CODE >1868:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E2 code CODE >1868:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E3 code CODE >1871:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E4 code CODE >1872:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E5 code CODE >1873:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E6 code CODE >1874:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E7 code CODE >1875:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E8 code CODE >1876:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6E9 code CODE >1877:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6EA code CODE >1883:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6EB code CODE >1884:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6EC code CODE >1885:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6ED code CODE >1886:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6EE code CODE >1887:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6EF code CODE >1887:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F0 code CODE >1889:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F1 code CODE >1890:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F2 code CODE >1894:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F3 code CODE >1895:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F4 code CODE >1896:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F5 code CODE >1897:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F6 code CODE >1898:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F7 code CODE >1899:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F8 code CODE >1900:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6F9 code CODE >1901:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6FA code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6FB code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6FC code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6FD code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+6FE code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+701 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+702 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+706 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+707 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+70A code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+70B code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+70F code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+710 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+713 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+714 code CODE >1905:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+717 code CODE >1907:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+718 code CODE >1908:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+719 code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71A code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71B code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71C code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71D code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71E code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+71F code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+720 code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+721 code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+722 code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+723 code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+724 code CODE >1909:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+725 code CODE >1912:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+726 code CODE >1920:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+727 code CODE >1921:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+728 code CODE >1925:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+729 code CODE >1932:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72A code CODE >1933:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72B code CODE >1934:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72C code CODE >1935:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72D code CODE >1936:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72E code CODE >1937:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+72F code CODE >1948:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+730 code CODE >1949:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+731 code CODE >1950:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+732 code CODE >1951:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+733 code CODE >1954:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+734 code CODE >1962:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+735 code CODE >1963:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+736 code CODE >1964:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+737 code CODE >1965:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+738 code CODE >1966:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+739 code CODE >1967:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73A code CODE >1968:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73B code CODE >1969:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73C code CODE >1970:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73D code CODE >1971:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73E code CODE >1973:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+73F code CODE >1984:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+740 code CODE >1985:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+741 code CODE >1986:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+742 code CODE >1987:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+743 code CODE >1988:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+744 code CODE >1992:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+745 code CODE >1993:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+746 code CODE >1994:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+747 code CODE >1995:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+748 code CODE >1996:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+749 code CODE >1997:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74A code CODE >1998:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74B code CODE >2001:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74C code CODE >2002:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74D code CODE >2005:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74E code CODE >2006:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+74F code CODE >2010:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+750 code CODE >2011:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+751 code CODE >2012:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+752 code CODE >2013:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+753 code CODE >2014:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+754 code CODE >2015:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+755 code CODE >2016:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+756 code CODE >2017:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+757 code CODE >2018:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+758 code CODE >2019:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+759 code CODE >2020:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75A code CODE >2021:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75B code CODE >2025:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75C code CODE >2026:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75D code CODE >2027:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75E code CODE >2028:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+75F code CODE >2029:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+760 code CODE >2030:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+761 code CODE >2031:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+762 code CODE >2032:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+763 code CODE >2033:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+764 code CODE >2034:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+765 code CODE >2038:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+766 code CODE >2039:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+767 code CODE >2040:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+768 code CODE >2041:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+769 code CODE >2042:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76A code CODE >2043:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76B code CODE >2044:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76C code CODE >2045:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76D code CODE >2048:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76E code CODE >2049:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+76F code CODE >2050:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+770 code CODE >2051:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+771 code CODE >2052:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+772 code CODE >2053:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+773 code CODE >2054:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+774 code CODE >2055:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+775 code CODE >2059:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+776 code CODE >2060:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+777 code CODE >2061:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+778 code CODE >2062:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+779 code CODE >2063:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77A code CODE >2064:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77B code CODE >2065:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77C code CODE >2066:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77D code CODE >2070:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77E code CODE >2071:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+77F code CODE >2072:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+780 code CODE >2073:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+781 code CODE >2074:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+782 code CODE >2075:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+783 code CODE >2076:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+784 code CODE >2077:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+785 code CODE >2078:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+786 code CODE >2079:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+787 code CODE >2080:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+788 code CODE >2084:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+789 code CODE >2085:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78A code CODE >2089:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78B code CODE >2090:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78C code CODE >2094:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78D code CODE >2095:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78E code CODE >2099:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+78F code CODE >2100:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+790 code CODE >2104:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+791 code CODE >2105:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+792 code CODE >2109:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+793 code CODE >2110:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+794 code CODE >2114:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+795 code CODE >2115:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+796 code CODE >2116:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+797 code CODE >2117:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+798 code CODE >2118:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+799 code CODE >2119:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79A code CODE >2120:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79B code CODE >2121:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79C code CODE >2122:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79D code CODE >2128:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79E code CODE >2132:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+79F code CODE >2133:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A0 code CODE >2134:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A1 code CODE >2135:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A2 code CODE >2136:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A3 code CODE >2137:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A4 code CODE >2138:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A5 code CODE >2147:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A6 code CODE >2148:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A7 code CODE >2149:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A8 code CODE >2150:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7A9 code CODE >2151:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7AA code CODE >2152:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7AB code CODE >2153:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7AC code CODE >2154:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7AD code CODE >2155:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7AE code CODE >2156:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7AF code CODE >2157:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B0 code CODE >2158:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B1 code CODE >2159:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B2 code CODE >2160:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B3 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B4 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B5 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B6 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B7 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B8 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7B9 code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7BA code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7BB code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7BC code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7BD code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7BE code CODE >2166:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7BF code CODE >2167:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C0 code CODE >2171:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C1 code CODE >2172:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C2 code CODE >2173:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C3 code CODE >2174:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C4 code CODE >2175:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C5 code CODE >2179:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C6 code CODE >2182:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C7 code CODE >2183:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C8 code CODE >2190:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7C9 code CODE >2191:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7CA code CODE >2195:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7CB code CODE >2198:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7CC code CODE >2199:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7CD code CODE >2200:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7CE code CODE >2201:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7CF code CODE >2202:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D0 code CODE >2203:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D1 code CODE >2204:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D2 code CODE >2205:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D3 code CODE >2206:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D4 code CODE >2207:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D5 code CODE >2211:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D6 code CODE >2212:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D7 code CODE >2213:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D8 code CODE >2216:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7D9 code CODE >2218:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7DA code CODE >2219:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7DB code CODE >2220:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7DC code CODE >2225:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7DD code CODE >2226:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7DE code CODE >2229:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7DF code CODE >2230:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E0 code CODE >2231:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E1 code CODE >2232:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E2 code CODE >2233:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E3 code CODE >2240:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E4 code CODE >2241:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E5 code CODE >2242:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E6 code CODE >2243:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E7 code CODE >2244:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E8 code CODE >2245:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7E9 code CODE >2249:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7EA code CODE >2250:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7EB code CODE >2251:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7EC code CODE >2252:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7ED code CODE >2253:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7EE code CODE >2254:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7EF code CODE >2255:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F0 code CODE >2256:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F1 code CODE >2259:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F2 code CODE >2260:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F3 code CODE >2264:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F4 code CODE >2265:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F5 code CODE >2266:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F6 code CODE >2267:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F7 code CODE >2268:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F8 code CODE >2269:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7F9 code CODE >2270:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7FA code CODE >2271:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7FB code CODE >2275:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7FC code CODE >2276:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7FD code CODE >2277:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7FE code CODE >2281:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+7FF code CODE >2282:C:\Users\Aniello\Desktop\Folders\Frequenzimetro PIC HEX files\PIC16F628A_AS_DL4YHF.X\counter.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 1D 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 346 0 ABS 0 udata_bank0 -
+__Hudata_bank1 346 0 ABS 0 udata_bank1 -
+__Hudata_bank2 346 0 ABS 0 udata_bank2 -
+__LresetVec 0 0 CODE 0 resetVec -
+__HresetVec 346 0 CODE 0 resetVec -
+__Hedata 346 0 ABS 0 edata -
+__Hudata 346 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 346 0 ABS 0 edata -
+__Ludata 346 0 ABS 0 udata -
+__Hcode 346 0 ABS 0 code -
+__Hdata 346 0 ABS 0 data -
+__Lcode 346 0 ABS 0 code -
+__Ldata 346 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 211D 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 346 0 ABS 0 udata_bank0 -
+__Ludata_bank1 346 0 ABS 0 udata_bank1 -
+__Ludata_bank2 346 0 ABS 0 udata_bank2 -
+__Hudata_shr 346 0 ABS 0 udata_shr -
+__Ludata_shr 346 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+edata 3 0 4200 1D 2
+resetVec 0 0 0 1A3 2
+code 0 634 C68 1CC 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

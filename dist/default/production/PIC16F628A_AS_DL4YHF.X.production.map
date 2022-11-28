@@ -1,0 +1,120 @@
+Microchip MPLAB XC8 PIC(R) Assembler V2.40
+
+Linker command line:
+
+-W-3 \
+  --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
+  -cs -h+dist/default/production\PIC16F628A_AS_DL4YHF.X.production.sym \
+  --cmf=dist/default/production\PIC16F628A_AS_DL4YHF.X.production.cmf -z \
+  -Q16F628A -oC:\Users\Aniello\AppData\Local\Temp\xcAs5d0.4 -PresetVec=0x0 \
+  --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
+  -Mdist/default/production/PIC16F628A_AS_DL4YHF.X.production.map -E1 \
+  --acfsm=1493 -ACODE=00h-07FFh -ASTRCODE=00h-07FFh -ASTRING=00h-0FFhx8 \
+  -ACONST=00h-0FFhx8 -AENTRY=00h-0FFhx8 -ACOMMON=070h-07Fh \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0120h-014Fh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0120h-014Fh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-014Fh -ASFR0=00h-01Fh -ASFR1=080h-09Fh \
+  -ASFR2=0100h-011Fh -ASFR3=0180h-01EFh -ACONFIG=02007h-02007h -DCONFIG=2 \
+  -AIDLOC=02000h-02003h -DIDLOC=2 -AEEDATA=00h-07Fh/02100h -DEEDATA=2 \
+  -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
+  build/default/production/counter.o 
+
+Object code version is 3.11
+
+Machine type is 16F628A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+build/default/production/counter.o
+                config                             2007     2007        1        0       4
+                resetVec                              0        0      1A3        0       0
+                edata                                 0     2100       1D     4200       3
+                code                                634      634      1CC      C68       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                resetVec                              0        0      1A3         0
+                code                                634      634      1CC         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         4
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+                edata                                 0     2100       1D         3
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                resetVec                       000000  0001A3  0001A3         0       0  CODE        2
+                code                           000634  0001CC  000800       C68       0  CODE        2
+                edata                          002100  00001D  00211D      4200       3  EEDATA      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0020-006F             50           1
+        BANK1            00A0-00EF             50           1
+        BANK2            0120-014F             30           1
+        CODE             01A3-0633            491           2
+        COMMON           0070-007F             10           1
+        CONST            01A3-0633            100           2
+        EEDATA           211D-217F             63           2
+        ENTRY            01A3-0633            100           2
+        IDLOC            2000-2003              4           2
+        RAM              0020-006F             50           1
+                         00A0-00EF             50
+                         0120-014F             30
+        STRCODE          01A3-0633            491           2
+        STRING           01A3-0633            100           2
+
+                                  Symbol Table
+
+__Hcode        code        0346  __Hconfig      config      2008
+__Hdata        data        0346  __Hedata       edata       0346
+__HresetVec    resetVec    01A3  __Hspace_0     (abs)       0800
+__Hspace_1     (abs)       0000  __Hspace_3     (abs)       001D
+__Hspace_4     (abs)       400F  __Hudata       udata       0346
+__Hudata_bank0 udata_bank0 0346  __Hudata_bank1 udata_bank1 0346
+__Hudata_bank2 udata_bank2 0346  __Hudata_shr   udata_shr   0346
+__Lcode        code        0346  __Lconfig      config      0000
+__Ldata        data        0346  __Ledata       edata       0346
+__LresetVec    resetVec    0000  __Lspace_0     (abs)       0000
+__Lspace_1     (abs)       0000  __Lspace_3     (abs)       0000
+__Lspace_4     (abs)       0000  __Ludata       udata       0346
+__Ludata_bank0 udata_bank0 0346  __Ludata_bank1 udata_bank1 0346
+__Ludata_bank2 udata_bank2 0346  __Ludata_shr   udata_shr   0346
+__S0           (abs)       0800  __S1           (abs)       0000
+__S3           (abs)       211D  
