@@ -11,7 +11,7 @@ by Aniello Di Nardo (IU8NQI)
 * Schematic available at: (https://qsl.net/dl4yhf/freq_counter/freq_counter.html)
 * MPLAB X v.6 with a XC8 PIC ASSEMLER (pic-as) compiler
 * A standard (or advanced) PIC programmer board (eg: PICkit3, PICkit4, PIC K150, ...)
-* HEX available [Here](https://raw.githubusercontent.com/StarNiell/PIC16F628A_AS_DL4YHF.X/main/dist/default/production/PIC16F628A_AS_DL4YHF.X.production.hexx)
+* HEX available [Here](https://raw.githubusercontent.com/StarNiell/PIC16F628A_AS_DL4YHF.X/main/dist/default/production/PIC16F628A_AS_DL4YHF.X.production.hex)
 
 ## Change Log
 ### 2022-11-27
