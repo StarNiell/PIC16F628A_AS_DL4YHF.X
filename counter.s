@@ -4,8 +4,8 @@
 // AUTHOR:    Wolfgang Buescher, DL4YHF                                    *
 //            (based on a work by James Hutchby, MadLab, 1996)             *
 //            ex MPLAB 8 project (MPASM Assembly compilator)               *
-//            ported to MPLAB X 6 project (pic-as Assembly compilator)     *
-//            by Aniello Di Nardo (IU8NQI)                                 *
+//            ported to MPLAB X v6 project (pic-as Assembly compiler)      *
+//            by Aniello Di Nardo (StarNiell) (IU8NQI)                     *
 // REVISIONS: (latest entry first)                                         *
 // 2022-11-27 - Aniello Di Nardo (IU8NQI): porting to MPLAB X 6 (pic-as)   *
 //		remember to set "-Wl,-PresetVec=0x0" in pic-as global      *
