@@ -1,4 +1,4 @@
-# PIC16F628A_AS_DL4YHF.X
+# About this repo
 
 ## General info
 This project is simple low-cost digital frequency meter using a PIC 16F628A  
