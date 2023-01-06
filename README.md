@@ -17,4 +17,4 @@ by Aniello Di Nardo (IU8NQI)
 ### 2022-11-27
 * *Porting to MPLAB X 6 (pic-as compiler)*
 * *Remember to set "-Wl,-PresetVec=0x0" in pic-as global options (Additional Options) of Project Properties*
-* *Added 10695000 Mhz into IF Table*         
+* *Added 10695000 Hz into IF Table*         
