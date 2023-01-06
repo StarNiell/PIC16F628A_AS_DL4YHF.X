@@ -9,7 +9,7 @@ by Aniello Di Nardo (IU8NQI)
 ## Requirements
 * A PCB board based on the PIC16F628A designed by Wolfgang Buescher, DL4YHF (available already mounted also on Ebay, AliExpress, etc...)
 * Schematic available at: (https://qsl.net/dl4yhf/freq_counter/freq_counter.html)
-* MPLAB X v.6 with a XC8 PIC ASSEMLER (pic-as) compiler
+* MPLAB X v.6 with a XC8 PIC ASSEMBLER (pic-as) compiler
 * A standard (or advanced) PIC programmer board (eg: PICkit3, PICkit4, PIC K150, ...)
 * HEX available [Here (raw)](https://raw.githubusercontent.com/StarNiell/PIC16F628A_AS_DL4YHF.X/main/dist/default/production/PIC16F628A_AS_DL4YHF.X.production.hex) or [Here (zip)](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/StarNiell/PIC16F628A_AS_DL4YHF.X/blob/main/dist/default/production/PIC16F628A_AS_DL4YHF.X.production.hex)
 
